@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>İzmit İmaj Temizlik</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: url('yıkama.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    .overlay {
+      background-color: rgba(255, 255, 255, 0.93);
+      min-height: 100vh;
+    }
+    header {
+      background: #0c1e4a;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    nav {
+      background: #16397a;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+      gap: 30px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .hero {
+      background: url('temizlik-banner.jpg') no-repeat center center/cover;
+      height: 280px;
+    }
+    .section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #0c1e4a;
+    }
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 30px;
+    }
+    
+
+    
+    .card img {
+      width: 100%;
+      border-radius: 6px;
+      margin-bottom: 10px;
+    }
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 768px) {
+      .grid-3 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .services ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    .services li {
+      margin-bottom: 10px;
+      padding-left: 20px;
+      position: relative;
+    }
+    .services li::before {
+      content: "✔";
+      color: #0c1e4a;
+      position: absolute;
+      left: 0;
+    }
+    .contact p {
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+    .btn {
+      display: inline-block;
+      background: #0c1e4a;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #0a1738;
+    }
+    .footer {
+      background: #0c1e4a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <header>
+      <h1>İzmit İmaj Temizlik</h1>
+      <p>Profesyonel Temizlikte Güvenilir Adres</p>
+    </header>
+
+    <nav>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#iletisim">İletişim</a>
+    </nav>
+
+    <div class="hero"></div>
+
+    <div class="section" id="hakkimizda">
+      <h2>Hakkımızda</h2>
+      <div class="card">
+        <p>İzmit İmaj Temizlik olarak koltuk, yatak, yorgan yıkama, araç koltuğu temizliği, ev ve işyeri temizliği gibi alanlarda uzmanlaşmış profesyonel bir ekibiz. Uygun fiyat, ücretsiz servis ve müşteri memnuniyetini temel alan hizmet anlayışımızla çalışıyoruz.</p>
+      </div>
+
+      <div class="grid-3">
+        <div class="card">
+          <img src="temizlik-banner.jpeg" alt="Afiş Görseli">
+          <p></p>
+        </div>
+
+        <div class="card">
+          <img src="koltuk.jpg" alt="Koltuk Yıkama">
+          <p>Koltuk yıkama hizmetimizden bir kare.</p>
+        </div>
+
+        <div class="card">
+          <img src="araç.jpg" alt="araç koltuk yıkama">
+          <p>Araç koltuk yıkama  temizlik.</p>
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+      </div>
+    </div>
+
+    <div class="section services" id="hizmetler">
+      <h2>Hizmetlerimiz</h2>
+      <div class="card">
+        <ul>
+          <li>Koltuk, Yatak, Yorgan Yıkama</li>
+          <li>Araç Koltuğu Yıkama</li>
+          <li>Ev, İşyeri, Apartman Temizliği</li>
+          <li>İnşaat Sonrası Temizlik</li>
+          <li>Havuz Temizliği</li>
+          <li>Bahçe Düzenlemesi</li>
+         
+        </ul>
+      </div>
+    </div>
+
+ 
+
+    <div class="section contact" id="iletisim">
+      <h2>İletişim</h2>
+      <div class="card">
+        <p>📞 0 539 894 15 41</p>
+        <p>📞 0 534 919 12 16</p>
+        <p>📸 Instagram: @izmitimajtemizlik</p>
+        <a href="tel:05398941541" class="btn">Hemen Ara</a>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 İzmit İmaj Temizlik - Tüm Hakları Saklıdır
+    </div>
+  </div>
+</body>
+</html>
